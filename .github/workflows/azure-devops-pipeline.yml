@@ -16,4 +16,4 @@ jobs:
           organization: 'https://dev.azure.com/DSMidtermRepos/' # Replace with your organization URL
           project: 'DSProject' # Replace with your project name
           pipeline: '20241126.1' # Pipeline ID
-          azure-devops-token: ${{EZTthOG1viZN9vNGl2MDve1hb1oVKq3D2uYvFpFVRGCeGZzTGG5xJQQJ99AKACAAAAAAAAAAAAASAZDO4gQr}}
+          azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
