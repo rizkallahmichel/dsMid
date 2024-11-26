@@ -1,0 +1,6 @@
+@dsMid_HostAddress = http://localhost:5043
+
+GET {{dsMid_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
