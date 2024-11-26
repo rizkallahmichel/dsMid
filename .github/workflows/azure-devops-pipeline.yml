@@ -1,0 +1,19 @@
+name: Trigger Azure DevOps Pipeline
+
+on:
+  push:
+    branches:
+      - master # Trigger only on changes to the master branch
+
+jobs:
+  trigger-azure-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Azure DevOps Pipeline
+        uses: azure/pipelines-action@v1
+        with:
+          organization: 'https://dev.azure.com/DSMidtermRepos/' # Replace with your organization URL
+          project: 'DSProject' # Replace with your project name
+          pipeline: '20241126.1' # Pipeline ID
+          azure-devops-token: ${{EZTthOG1viZN9vNGl2MDve1hb1oVKq3D2uYvFpFVRGCeGZzTGG5xJQQJ99AKACAAAAAAAAAAAAASAZDO4gQr}}
